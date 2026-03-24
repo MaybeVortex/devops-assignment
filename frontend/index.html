@@ -7,7 +7,6 @@
     <h1>Student Info</h1>
     <p id="name"></p>
     <p id="roll"></p>
-    <p id="reg"></p>
 
     <script>
         fetch("http://localhost:5000/student-details")
@@ -15,7 +14,6 @@
         .then(data => {
             document.getElementById("name").innerText = "Name: " + data.name;
             document.getElementById("roll").innerText = "Roll: " + data.roll_number;
-            document.getElementById("reg").innerText = "Register: " + data.register_number;
         });
     </script>
 </body>
