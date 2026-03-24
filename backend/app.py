@@ -7,9 +7,8 @@ CORS(app)   # 👈 THIS LINE FIXES YOUR ERROR
 @app.route('/student-details', methods=['GET'])
 def student_details():
     return jsonify({
-        "name": "Your Name",
-        "roll_number": "Your Roll No",
-        "register_number": "Your Register No"
+        "name": "M.Nivien",
+        "roll_number": "2023BCS0054",
     })
 
 if __name__ == '__main__':
