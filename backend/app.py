@@ -1,6 +1,8 @@
 from flask import Flask, jsonify
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)   # 👈 THIS LINE FIXES YOUR ERROR
 
 @app.route('/student-details', methods=['GET'])
 def student_details():
